@@ -1,0 +1,263 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"Sequential"
+			],
+			[
+				"Se",
+				"SelfAttention"
+			],
+			[
+				"Ba",
+				"BatchNorm2d"
+			],
+			[
+				"Batc",
+				"BatchNorm1d"
+			],
+			[
+				"Con",
+				"Conv2d"
+			],
+			[
+				"ini",
+				"init"
+			],
+			[
+				"de",
+				"defaults"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"conf",
+				"configparser"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Ana",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"package control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 619.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/suze/Documents/Thesis/seed_images/suze_scripts/conv3D_test.py",
+		"/home/suze/.config/sublime-text-3/Packages/Anaconda/Default (Linux).sublime-keymap",
+		"/home/suze/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/suze/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/suze/Documents/Thesis/seed_images/suze_scripts/convnet_test.py",
+		"/home/suze/Documents/fastai_to3D/fastai/layers.py",
+		"/home/suze/Documents/fastai_to3D/fastai/data_block.py",
+		"/home/suze/Documents/fastai_to3D/fastai/vision/models/unet.py",
+		"/home/suze/Documents/Thesis/DynamicUnet_summary.txt",
+		"/home/suze/Documents/Thesis/Weekly_progress.txt",
+		"/home/suze/.config/sublime-text-3/Packages/User/Anaconda.sublime-settings",
+		"/home/suze/.config/sublime-text-3/Packages/Anaconda/README.md",
+		"/home/suze/Documents/Thesis/seed_images/suze_scripts/Macro_turn_z90_x90.ijm.ijm.ijm",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/fix_rotated_labels.zsh",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/rotate_image_stack.ijm",
+		"/home/suze/Documents/fastai_to3D/fastai/basic_train.py",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/create_rotated_datasets.zsh",
+		"/home/suze/Documents/Thesis/TODO.txt",
+		"/home/suze/Documents/Thesis/notes.txt",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/create_new_labels_with_fuzz.zsh",
+		"/tmp/device-kuswqf/2D_segmentation.py",
+		"/tmp/device-4pswl1/2D_segmentation.py",
+		"/tmp/device-3799rf/2D_segmentation.py",
+		"/tmp/device-fp0875/README",
+		"/tmp/device-67f24_/README",
+		"/home/suze/Downloads/caffe_unet_3D_v1.0_patch/caffe_unet_3D_v1.0.patch",
+		"/tmp/device-6z4i_k/2D_segmentation.py",
+		"/tmp/device-vx3bjk/2D_segmentation.py",
+		"/tmp/device-epf9mq/2D_segmentation.py",
+		"/tmp/device-bsgyow/segement_fastai.py",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/segement_fastai.py",
+		"/home/suze/.ssh/config",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/6.py",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/5.py",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/4.py",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/3.py",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/2.py",
+		"/home/suze/Downloads/Course_compendia-master/Python/Exercises/Solutions/1.py",
+		"/home/suze/Documents/Thesis/seed_images/suze_scripts/Test_seeds_1.py",
+		"/home/suze/Documents/Thesis/seed_images/Data_for_ML_Test/create_new_labels.zsh",
+		"/home/suze/Documents/Testprojects/fastai-dl1/course-v3/nbs/dl1/test_seeds.py.ipynb",
+		"/home/suze/Documents/Thesis/seed_images/nikos_scripts/create_new_labels.zsh",
+		"/home/suze/Documents/Testprojects/test1/test1.py",
+		"/home/suze/Documents/Testprojects/test1/ini_test.py",
+		"/home/suze/Documents/Testprojects/test1/ini_file.ini",
+		"/home/suze/.fastai/data/camvid_tiny/codes.txt",
+		"/home/suze/miniconda3/lib/python3.7/configparser.py",
+		"/home/suze/miniconda3/lib/python3.7/con",
+		"/home/suze/.ssh/ssh_config",
+		"/home/suze/Documents/Proposal/gannt_chart.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "conv3D_test.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

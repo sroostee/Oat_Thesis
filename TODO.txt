@@ -1,0 +1,21 @@
+TODO list:
+
+2D:
+ - Incooperate other slices for validation (and training)
+
+
+
+3D: 
+- rotate images in various planes
+
+
+
+########################
+
+notes to self
+
+Images and Labels need to have the same file names, in an Images and NewLabels (or Labels) folder
+softlink images to test folders with absolute path 
+
+Turn images with z=90, y=90, x=0; and z=0, y=90, x=0
+(results in side and top view of seed lenghtwise)

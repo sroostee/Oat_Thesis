@@ -1,0 +1,49 @@
+############# Week 11-15 November	##############
+
+Indepth learning of algorithm structures:
+	kaimining initialisation
+	normalisation
+Start on own 3D CNN with Pytorch
+
+#############	Week 4-8 November 	##############
+
+Image Analysis course
+More indepth learning of the CNN/Resnet/Unet structrue:
+	matmul, broadcasting, einstein summation
+	convolutions, forward and backward pass
+NLP lecture series day
+
+#############	Week 28-1 October/November	############
+
+Testing 2D classification with first set of rotated images both in training and validation sets. Small set, 4 epochs overall accuracy 0.968. Per class:
+label 	score
+0.0 	0.991383
+1.0 	0.942063
+2.0 	0.832028
+3.0 	0.742473
+*note: aleurone is wider in BM3 training set which results in slightly too wide predicted aleurone in BM1 validation set. 
+**note2: initialising appears slower than actual training
+
+Full data set (all rotated images)
+label 	score
+0.0 	0.989370
+1.0 	0.938894
+2.0 	0.831126
+3.0 	0.758193
+
+
+#############	Week 21-25 October	#############
+
+Watching lectures on programming a NN from scratch (lecture 8)
+	Covered topics: - Frobenius norm
+					- Broadcasting
+					- Einstein summation (einsum)
+					- Direct pytorch operations (e.g. matmul)
+
+Testing the 2D classification with first sets of rotated images.
+	BM1 as validation set, BM3 as training set. Images rotated with z 90' and x 90'. Even when keeping rotated images out of the training set the first results were promising (all classed above 60% accuracy with 4 epochs on 128x128 images).
+
+ 
+
+
+
