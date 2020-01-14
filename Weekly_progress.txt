@@ -1,3 +1,25 @@
+############# Week 13-17 January	##############
+
+Presentation outline
+
+############# Week 6-10 January	##############
+
+Taking a batch from the loaded data and conversion from 4D to 5D structure managed for images. 
+	- not yet for labels 
+	- not matched 
+Creating layers with a 3D convolutions in using fastai support works (conv3D_NotebookTest)
+Also possible to add this layer into a UnetBlock making it a 3D Unet block
+Figuring out where to go from there, build 3D mini Unet? 
+Accessing final layer(s) of dynamic Unet appears hard because of the dynamic way it has been built up (using e.g. resnet structure. Current idea to take the output of the completed dynamic Unet (resnet structure) and put that into a small 3D UNnet.
+
+############# Week 18 November - 20 December	##############
+
+Worked on Dataloading in a custom manner for in-batch sorting, while random batch orders to save 3D info within batches. 
+Structured project across both devices through Git. 
+Working on understanding and applying a 3D conv layer from PyTorch 
+Converting two 2D conv layers to 1 3D conv layer. 
+Figuring out how 
+
 ############# Week 11-15 November	##############
 
 Indepth learning of algorithm structures:
