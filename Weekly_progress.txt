@@ -1,6 +1,23 @@
+############# Week 20-24 January	##############
+
+To do:	
+	- finish presentation
+	- practice presentation
+	- add NewLabels to oat images (check how what to include)
+	- check Barley labels and only include the four basic ones
+
+
 ############# Week 13-17 January	##############
 
 Presentation outline
+Running several tests with Barley
+	- fix show_xyz for interpretation of single slice
+Structuring results
+
+Downloading Oat images
+Changed file structure: store Barley seeds in a Barley folder and Oat in Oat.
+
+
 
 ############# Week 6-10 January	##############
 
