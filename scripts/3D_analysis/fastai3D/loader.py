@@ -135,3 +135,9 @@ def intercept_args(self, dataset, batch_size=1, shuffle=False, sampler=None, bat
 	old_dl_init(self, dataset, **self.init_kwargs)
 
 torch.utils.data.DataLoader.__init__ = intercept_args
+
+def DataLoader___getattr__(dl, k:str)->Any: return getattr(dl.dataset, k)
+DataLoader.__getattr__ = DataLoader___getattr__
+
+def DataLoader___setstate__(dl, data:Any): dl.__dict__.update(data)
+DataLoader.__setstate__ = DataLoader___setstate__
