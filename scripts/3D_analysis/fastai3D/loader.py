@@ -8,7 +8,7 @@ from torch.utils.data.dataloader import default_collate
 from torch.utils.data import IterableDataset, Sampler, SequentialSampler, RandomSampler, BatchSampler
 from torch.utils.data.dataloader import _DatasetKind
 
-def my__init__(self, dataset, batch_size=1, shuffle=False, sampler=None,
+def __init__(self, dataset, batch_size=1, shuffle=False, sampler=None,
 				 batch_sampler=None, num_workers=0, collate_fn=None,
 				 pin_memory=False, drop_last=False, timeout=0,
 				 worker_init_fn=None, multiprocessing_context=None):
@@ -82,9 +82,13 @@ def my__init__(self, dataset, batch_size=1, shuffle=False, sampler=None,
 
 		if batch_sampler is not None:
 			# auto_collation with custom batch_sampler
-			if batch_size != 1 or shuffle or sampler is not None or drop_last:
+			# if batch_size != 1 or shuffle or sampler is not None or drop_last:
+			# 	raise ValueError('batch_sampler option is mutually exclusive '
+			# 					 'with batch_size, shuffle, sampler, and '
+			# 					 'drop_last')
+			if shuffle or sampler is not None or drop_last:
 				raise ValueError('batch_sampler option is mutually exclusive '
-								 'with batch_size, shuffle, sampler, and '
+								 'with shuffle, sampler, and '
 								 'drop_last')
 			batch_size = batch_sampler.batch_size
 			drop_last = batch_sampler.drop_last
@@ -123,7 +127,7 @@ def my__init__(self, dataset, batch_size=1, shuffle=False, sampler=None,
 		self.collate_fn = collate_fn
 		self.__initialized = True
 
-old_dl_init = my__init__
+old_dl_init = __init__
 
 #from fastai
 def intercept_args(self, dataset, batch_size=1, shuffle=False, sampler=None, batch_sampler=None,
@@ -136,8 +140,8 @@ def intercept_args(self, dataset, batch_size=1, shuffle=False, sampler=None, bat
 
 torch.utils.data.DataLoader.__init__ = intercept_args
 
-def DataLoader___getattr__(dl, k:str)->Any: return getattr(dl.dataset, k)
-DataLoader.__getattr__ = DataLoader___getattr__
+#def DataLoader___getattr__(dl, k:str)->Any: return getattr(dl.dataset, k)
+#DataLoader.__getattr__ = DataLoader___getattr__
 
-def DataLoader___setstate__(dl, data:Any): dl.__dict__.update(data)
-DataLoader.__setstate__ = DataLoader___setstate__
+#def DataLoader___setstate__(dl, data:Any): dl.__dict__.update(data)
+#DataLoader.__setstate__ = DataLoader___setstate__
