@@ -1,3 +1,17 @@
+############ Week 16-23 March 	########
+
+
+conv3D final layer
+Training result:
+ epoch 	train_loss 	valid_loss 	acc_seeds 	time
+0 	1.083574 	1.551851 	0.067753 	17:50
+
+
+unstack final layer
+ epoch 	train_loss 	valid_loss 	acc_seeds 	time
+0 	0.992620 	1.060714 	0.475229 	18:12
+
+
 ############# Week 20-24 January	##############
 
 To do:	
