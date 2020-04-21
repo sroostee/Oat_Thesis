@@ -4,6 +4,7 @@ Project overview
 
 
 
+
 Author: Suze Julia Roostee
 Supervised by: Nikos Tsardakos Renhuldt, Nick Sirijovski
 
@@ -27,8 +28,13 @@ conda activate $envname
 Data preprocessing
 
 Coversion of coloured labels to greyscale levels and storing the new labels in NewLabels directory
-run as ./create_new_labels_with_fuzz.zsh
+run as ./create_new_labels_with_fuzz_barĺey.zsh
 and create_new_labels_with_fuzz_oat.zsh
+
+Rotate the image stacks and the labels with the 
+
+TransformJ Turn
+
 
 Suggested structure:
 Barley/
