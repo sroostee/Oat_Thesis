@@ -1,0 +1,21 @@
+Barley
+Train: BB5 + BM3 (with rotation)
+Valid: BM1 (with rotation)
+Test: BM2
+
+
+Evaluation of Training on Validation Set
+
+Overall:
+label 	score
+0.0 	0.994040
+1.0 	0.984660
+3.0 	0.901160
+2.0 	0.878837
+
+Worst performing image:
+label 	score
+1.0 	0.997591
+0.0 	0.951530
+3.0 	0.884560
+2.0 	0.667353
