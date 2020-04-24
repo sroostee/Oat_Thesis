@@ -55,14 +55,17 @@ Before moving to the script make sure you have the following file structure for 
 All images and labels required to training should be linked to their respective directories. 
 Images used for validation during trainging should be specified in valid.txt 
 
-
-
+ln -s ~/seed_images/Data_for_ML_Test/Barley/BM3/Images/* .
+ls BM1* > valid.txt
+mv Images/valid.txt .
 
 Training classifier
 
 Predictions
 
 After training directory will look like
+mogrify -crop sizexsize+0+0 *.tif
+
 
 train/
 	Images  Labels  models  valid.txt predict_barley.pkl predict_oat.pkl
