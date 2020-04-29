@@ -31,10 +31,9 @@ label 	score
 2.0 	0.955887
 3.0 	0.704815
 
-rotated x 90 deg 300x300:
+rotated x 90° 300x300:
 
 Overall:
-
 
  label 	score
 0.0 	1.0
@@ -42,7 +41,7 @@ Overall:
 2.0 	0.0
 3.0 	0.0
 
-rotated z 90 deg x 90 deg 300x300:
+rotated z 90° x 90° 300x300:
 Overall
 [0.04131035, tensor(0.9843)]
 
@@ -52,3 +51,13 @@ Overall
 2.0 	0.961055
 3.0 	0.187267
 
+random rotation: z:70°, y:10°, x:20°
+
+Overall
+[0.015699659, tensor(0.9618)]
+
+label 	score
+0.0 	0.999727
+1.0 	0.873701
+2.0 	0.868590
+3.0 	0.522630
