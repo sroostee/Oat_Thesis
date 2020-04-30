@@ -1,0 +1,36 @@
+Barley
+Train: OB5 + OM1_7 + OM2 (with rotation)
+Valid: Omat (with rotation)
+Test: OB6
+
+
+Evaluation of Training on Validation Set
+
+Overall:
+
+
+Worst performing image:
+
+
+Evaluation of Training on Test Set
+
+300x300
+
+Overall:
+
+
+rotated x 90° 300x300:
+
+Overall:
+
+
+rotated z 90° x 90° 300x300:
+Overall
+
+
+random rotation: z:70°, y:10°, x:20°
+
+Overall
+
+label 	score
+
