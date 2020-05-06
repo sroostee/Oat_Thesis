@@ -1,4 +1,145 @@
-Barley
+Oat
+
+Train: OB5 + OM1_7 + OM2 (without rotation, without transforms)
+Valid: Omat (without rotation, without rotation, without transforms)
+Test: OB6
+
+
+Evaluation of Training on Validation Set
+
+Overall:
+[0.02042304, tensor(0.9841)]
+label 	score
+0.0 	0.999194
+1.0 	0.969248
+2.0 	0.926265
+3.0 	0.879126
+
+Worst performing image:
+whoops, forgot to copy
+
+
+Evaluation of Training on Test Set
+
+300x300
+----------------------------
+no rotation:
+
+Overall:
+[0.14518718, tensor(0.9332)]
+label 	score
+0.0 	0.999036
+2.0 	0.938616
+1.0 	0.930517
+3.0 	0.277362
+
+---------------------------
+rotated x 90° 300x300:
+
+Overall:
+[0.80212367, tensor(0.7000)]
+label 	score
+0.0 	0.998167
+2.0 	0.731221
+1.0 	0.686261
+3.0 	0.003993
+
+---------------------------
+rotated z 90° x 90° 300x300:
+[0.8566915, tensor(0.6992)]
+Overall:
+label 	score
+0.0 	0.999426
+2.0 	0.756521
+1.0 	0.629422
+3.0 	0.483967
+
+---------------------------
+random rotation: z:70°, y:10°, x:20°
+
+Overall
+[0.032803953, tensor(0.9462)]
+label 	score
+0.0 	0.999852
+1.0 	0.869258
+2.0 	0.851738
+3.0 	0.284646
+
+--------------------------------------------------------
+--------------------------------------------------------
+--------------------------------------------------------
+Train: OB5 + OM1_7 + OM2 (without rotation)
+Valid: Omat (without rotation)
+Test: OB6
+
+
+Evaluation of Training on Validation Set
+
+Overall:
+[0.013073487, tensor(0.9893)]
+label 	score
+0.0 	0.998624
+1.0 	0.966602
+3.0 	0.951378
+2.0 	0.949890
+
+Worst performing image:
+label 	score
+0.0 	0.999921
+3.0 	0.075487
+1.0 	NaN
+2.0 	NaN
+
+Evaluation of Training on Test Set
+
+300x300
+----------------------------
+no rotation:
+
+Overall:
+[0.02118434, tensor(0.9857)]
+label 	score
+0.0 	0.998285
+1.0 	0.975429
+2.0 	0.969367
+3.0 	0.806365
+
+---------------------------
+rotated x 90° 300x300:
+
+Overall:
+[0.07311871, tensor(0.9708)]
+label 	score
+0.0 	0.997294
+1.0 	0.981376
+2.0 	0.861905
+3.0 	0.413363
+
+---------------------------
+rotated z 90° x 90° 300x300:
+
+Overall:
+[0.05011325, tensor(0.9757)]
+label 	score
+0.0 	0.997153
+1.0 	0.964208
+2.0 	0.920501
+3.0 	0.568246
+
+---------------------------
+random rotation: z:70°, y:10°, x:20°
+
+Overall
+[0.011388039, tensor(0.9729)]
+label 	score
+0.0 	0.999673
+1.0 	0.883029
+2.0 	0.871584
+3.0 	0.639959
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 Train: OB5 + OM1_7 + OM2 (with rotation)
 Valid: Omat (with rotation)
 Test: OB6
@@ -7,57 +148,65 @@ Test: OB6
 Evaluation of Training on Validation Set
 
 Overall:
-label 	score
-0.0 	0.997786
-1.0 	0.965346
-2.0 	0.957222
-3.0 	0.933263
+[0.018933253, tensor(0.9894)]
+
+ label 	score
+0.0 	0.996877
+1.0 	0.973041
+2.0 	0.949721
+3.0 	0.864645
 
 Worst performing image:
 label 	score
-0.0 	0.999378
-2.0 	0.970949
-1.0 	0.922874
+0.0 	0.996345
+2.0 	0.972862
+1.0 	0.846961
 3.0 	NaN
 
+-------------------------------------
+-------------------------------------
 Evaluation of Training on Test Set
 
 300x300
-
+no rotation
 Overall:
-label 	score
-0.0 	0.998251
-1.0 	0.971126
-2.0 	0.955887
-3.0 	0.704815
+[0.018576242, tensor(0.9871)]
+ label 	score
+0.0 	0.998318
+2.0 	0.969138
+1.0 	0.967382
+3.0 	0.857644
 
+------------------------
 rotated x 90° 300x300:
 
 Overall:
-
+[0.020302774, tensor(0.9892)]
  label 	score
-0.0 	1.0
-1.0 	0.0
-2.0 	0.0
-3.0 	0.0
+0.0 	0.997313
+1.0 	0.989387
+2.0 	0.974699
+3.0 	0.575129
 
+#extra check, they have not accidentally been swapped
+------------------------
 rotated z 90° x 90° 300x300:
 Overall
-[0.04131035, tensor(0.9843)]
+[0.026742222, tensor(0.9856)]
+label 	score
+0.0 	0.997137
+1.0 	0.980503
+2.0 	0.964165
+3.0 	0.460358
 
- label 	score
-0.0 	0.997297
-1.0 	0.981567
-2.0 	0.961055
-3.0 	0.187267
-
+------------------------
 random rotation: z:70°, y:10°, x:20°
 
 Overall
-[0.015699659, tensor(0.9618)]
-
+[0.009210936, tensor(0.9758)]
 label 	score
-0.0 	0.999727
-1.0 	0.873701
-2.0 	0.868590
-3.0 	0.522630
+0.0 	0.999698
+1.0 	0.884220
+2.0 	0.877284
+3.0 	0.767254
+
