@@ -1,36 +1,64 @@
 Barley
-Train: OB5 + OM1_7 + OM2 (with rotation)
-Valid: Omat (with rotation)
+Train: OB5 + OM1_7 + OM2 (without rotation)
+Valid: Omat (without rotation)
 Test: OB6
 
 
 Evaluation of Training on Validation Set
 
 Overall:
-
+[0.019238066, tensor(0.9842)]
+label 	score
+0.0 	0.998924
+1.0 	0.972329
+2.0 	0.927017
+3.0 	0.922674
 
 Worst performing image:
-
+label 	score
+0.0 	0.998538
+3.0 	0.732926
+1.0 	0.587838
+2.0 	0.140000
 
 Evaluation of Training on Test Set
 
 300x300
 
 Overall:
-
+[0.04585619, tensor(0.9709)]
+label 	score
+0.0 	0.997919
+1.0 	0.968794
+2.0 	0.953543
+3.0 	0.561429
 
 rotated x 90° 300x300:
 
 Overall:
-
+[0.1851665, tensor(0.9416)]
+label 	score
+0.0 	0.996840
+1.0 	0.952667
+2.0 	0.714064
+3.0 	0.211023
 
 rotated z 90° x 90° 300x300:
 Overall
-
+[0.1986989, tensor(0.9450)]
+label 	score
+0.0 	0.997713
+1.0 	0.929993
+2.0 	0.786382
+3.0 	0.364491
 
 random rotation: z:70°, y:10°, x:20°
 
 Overall
-
+[0.02316888, tensor(0.9536)]
 label 	score
+0.0 	0.999755
+1.0 	0.876554
+2.0 	0.867883
+3.0 	0.379521
 
