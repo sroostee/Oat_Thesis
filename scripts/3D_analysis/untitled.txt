@@ -1,0 +1,14 @@
+3D pretrain summary:
+
+
+Total params: 42,120,704
+Total trainable params: 20,853,056
+Total non-trainable params: 21,267,648
+Optimized with 'torch.optim.adam.Adam', betas=(0.9, 0.99)
+Using true weight decay as discussed in https://www.fast.ai/2018/07/02/adam-weight-decay/ 
+Loss function : FlattenedLoss
+======================================================================
+Callbacks functions applied 
+
+
+https://ruder.io/optimizing-gradient-descent/index.html#stochasticgradientdescent
