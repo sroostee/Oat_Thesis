@@ -1,4 +1,64 @@
-Barley
+Oat
+Train: OB5 + OM1_7 + OM2 (with rotation)
+Valid: Omat (with rotation)
+Test: OB6
+
+
+Evaluation of Training on Validation Set
+
+Overall:
+label 	score
+0.0 	0.988534
+1.0 	0.839824
+2.0 	0.564389
+3.0 	0.044860
+
+
+Evaluation of Training on Test Set
+
+300x300
+
+Overall:
+label 	score
+0.0 	0.989280
+1.0 	0.892597
+2.0 	0.592154
+3.0 	0.017378
+
+
+rotated x 90° 300x300:
+
+Overall:
+
+label 	score
+2.0 	0.590307
+0.0 	0.085537
+1.0 	0.000006
+3.0 	0.000000
+
+rotated z 90° x 90° 300x300:
+Overall
+2.0 	0.616923
+0.0 	0.075363
+1.0 	0.000001
+3.0 	0.000000
+
+random rotation: z:70°, y:10°, x:20°
+
+Overall
+
+
+label 	score
+2.0 	0.758107
+0.0 	0.106190
+1.0 	0.000000
+3.0 	0.000000
+
+
+
+
+
+Oat
 Train: OB5 + OM1_7 + OM2 (without rotation)
 Valid: Omat (without rotation)
 Test: OB6
@@ -7,58 +67,45 @@ Test: OB6
 Evaluation of Training on Validation Set
 
 Overall:
-[0.019238066, tensor(0.9842)]
-label 	score
-0.0 	0.998924
-1.0 	0.972329
-2.0 	0.927017
-3.0 	0.922674
+
 
 Worst performing image:
-label 	score
-0.0 	0.998538
-3.0 	0.732926
-1.0 	0.587838
-2.0 	0.140000
+
 
 Evaluation of Training on Test Set
 
 300x300
 
 Overall:
-[0.04585619, tensor(0.9709)]
 label 	score
-0.0 	0.997919
-1.0 	0.968794
-2.0 	0.953543
-3.0 	0.561429
+0.0 	0.994348
+1.0 	0.582612
+2.0 	0.543544
+3.0 	0.000041
 
 rotated x 90° 300x300:
 
 Overall:
-[0.1851665, tensor(0.9416)]
 label 	score
-0.0 	0.996840
-1.0 	0.952667
-2.0 	0.714064
-3.0 	0.211023
+0.0 	0.993276
+2.0 	0.455831
+1.0 	0.280400
+3.0 	0.001082
+
 
 rotated z 90° x 90° 300x300:
 Overall
-[0.1986989, tensor(0.9450)]
 label 	score
-0.0 	0.997713
-1.0 	0.929993
-2.0 	0.786382
-3.0 	0.364491
+0.0 	0.991356
+2.0 	0.479250
+1.0 	0.256881
+3.0 	0.000242
 
 random rotation: z:70°, y:10°, x:20°
 
 Overall
-[0.02316888, tensor(0.9536)]
-label 	score
-0.0 	0.999755
-1.0 	0.876554
-2.0 	0.867883
-3.0 	0.379521
-
+ label 	score
+0.0 	0.998779
+2.0 	0.274206
+1.0 	0.116191
+3.0 	0.000017
