@@ -2,14 +2,16 @@
 
 Project overview:
 
-
+In this thesis annotated oat seed images created with x-ray micro CT were used to create a classifier that can annotate new images
 
 
 
 
 Author: Suze Julia Roostee
 Supervised by: Nikos Tsardakas Renhuldt, Nick Sirijovski
+
 ---------
+
 Software versions:
 
 The project was carried out on Ubuntu 18.04.4 with Linux kernel (4.15.0-76) 
@@ -31,23 +33,28 @@ conda activate $fastai2020
 
 The full environemnt can be set up with the environmentfile environment.yml like:
 conda env create -f environment.yml
+
 ---------
+
 Data preprocessing
 
 Coversion of coloured labels to label values and storing the new labels in NewLabels directory
 run as ./create_new_labels_with_fuzz_oat.zsh
 
-Rotate the image stacks and the labels with the 
+Rotate the image stacks and the labels with ImageJ 
 
-TransformJ Turn
+for 90° degree turn use:
+TransformJ Turn 
+
+for the 70°, 20°, 10° use: 
 TransformJ Rotate
-
 
 Suggested structure:
 Oat/
 	Oat_variety/ #various seeds
-		Images Labels NewLabels
+		Images Labels NewLabels Images_rotated NewLabels_rotated
 ---------
+
 Data loading
 
 Before moving to the script make sure you have the following file structure for training:
@@ -55,33 +62,50 @@ Before moving to the script make sure you have the following file structure for 
 	train/
 		Images NewLabels valid.txt
 
-All images and labels required to training should be linked or copied to their respective directories. 
+All images and labels required for training should be linked or copied to their respective directories. 
 Labels should have the same file name as their corresponding image.
 Images used for validation during trainging should be specified in valid.txt 
 e.g.
-ln -s ~/seed_images/Data_for_ML_Test/Oat/Om2/Images/* .
+
+cd Images
+ln -s ~/seed_images/Data_for_ML_Test/Oat/Omat/Images/* .
 ls Omat*.tif > valid.txt
 cd ..
 mv Images/valid.txt .
 
 ---------
+
 Training classifier
 
-
+The classifier is trained and evaluated in Jupyter Notebook with the file 2D_segmentation.ipynb or 3D_segmentation.ipynb.
+Directories and some parameters can be changed using 2D_train.ini or 3D_train.ini.
+The classifier exported by this file is stored in a .pkl file such as 2D_oat.pkl and can also be used for label predictions of entire seeds.
 
 ---------
+
 Predictions
 
-After training directory will look like
-mogrify -crop sizexsize+0+0 *.tif
+In the fastai v.1 library predictions on new images can only be carried out on images with even size width and height (e.g. 630x650 is fine, but 630x649 is not). 
+In that case resize the image before predictions with
 
+mogrify -crop widthxheight+0+0 *.tif
 
-train/
-	Images  Labels  models  valid.txt predict_oat.pkl
+where width and height and the new (even numbers) width and height.
 
-To run predictions only the predict_oat.pkl is required
+Then the predictions can be done using the 2D_predict.ipynb script. The classifier should be in the same directory as this script.
+The new unlabelled images should be in a subdirectory. The prediction script will automatically create a directory to store the new labels in. 
+Classifier name and directory names can be specified in pred_2D.ini . 
+Suggested structure: 
+
+pred/
+	NewImages  PredLabels  2D_oat.pkl
+
+Optionally labels can be converted back to colours with label_to_colour.sh
+However volume calculations require the original label values.
 
 ---------
+
 Volume calculations
 
-
+volume calculations on labels can be carried out with the calc_vol.py script. 
+use like ./calc_vol.py -p pathtolabels -vox voxelsize -out outputfile
