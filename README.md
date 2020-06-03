@@ -2,9 +2,9 @@
 
 Project overview:
 
-In this thesis annotated oat seed images created with x-ray micro CT were used to create a classifier that can annotate new images
-
-
+In this thesis annotated oat seed images (2D stack forming 3D seed)  created with x-ray micro CT were used to create a classifier that can annotate new oat seed images.
+Five oat seeds were available for training, validation, and testing. Image stacks were rotated to create additional views. 
+The software used for this project and the project steps are described below, along with the files that belong to each section.
 
 
 Author: Suze Julia Roostee
@@ -80,6 +80,8 @@ Training classifier
 The classifier is trained and evaluated in Jupyter Notebook with the file 2D_segmentation.ipynb or 3D_segmentation.ipynb.
 Directories and some parameters can be changed using 2D_train.ini or 3D_train.ini.
 The classifier exported by this file is stored in a .pkl file such as 2D_oat.pkl and can also be used for label predictions of entire seeds.
+
+Evaluation of the model is done is the same files 2D_segmentation.ipynb or 3D_segmentation.ipynb and follows after training. 2D_test.ini or 3D_test.inin can be used to specify model and test directory.
 
 ---------
 
